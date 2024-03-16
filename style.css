@@ -1,0 +1,258 @@
+body{
+    background-image: url("https://cdn.mos.cms.futurecdn.net/9zB4RdJwQEJeS9jp4rd3s8-1200-80.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.main{
+   border: 3px solid black;
+    height: 500px;
+    width:500px;
+    background: black;
+    border-radius: 50%;
+    margin: auto;
+    margin-top: 10%;
+}
+.face{
+    background: chartreuse;
+    height: 150px;
+    width: 150px;
+    border-radius: 50% 50% 0 0;
+    margin: auto;
+    margin-top: 20px;
+}
+.eye{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 80px;
+}
+
+
+.leye,.reye{
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background: rgb(255, 255, 255);
+}
+.body1{
+    display: flex;
+    justify-content: space-around;
+    width:250px;
+    margin: auto;
+}
+
+.rhand{
+    height: 75px;
+    width: 25px;
+    background: chartreuse;
+    border-radius: 50px;
+    margin-top: 10px;
+}
+
+.body{
+    height: 150px;
+    width: 150px;
+    background: chartreuse;
+    border-radius: 0 0 50% 50%;
+    margin-top: 5%;
+
+}
+
+.lhand{
+    height: 75px;
+    width: 25px;
+    background: chartreuse;
+    border-radius: 50px;
+    margin-top: 10px;
+}
+
+.leg{
+display: flex;
+justify-content: space-evenly;
+width:150px;
+margin:auto;
+margin-top: -20px;
+}
+.rleg,.lleg{
+    height: 75px;
+    width: 25px;
+    background: chartreuse;
+    border-radius: 50px;
+
+}
+.main:hover {
+    animation: changemaincolor 1s 0.3s infinite;
+  }
+.main:hover .face {
+    animation: changefacecolor 1s 0.3s infinite;
+  }
+  
+  .main:hover .body {
+    border-radius: 40%;
+    animation: movebody 2s infinite;
+  }
+  
+  .main:hover .lhand {
+    animation: movelefthand 2s infinite;
+  }
+  
+  .main:hover .rhand {
+    animation: moverighthand 2s infinite;
+  }
+  
+  .main:hover .lleg {
+    animation: moveleftleg 2s infinite;
+  }
+  
+  .main:hover .rleg {
+    animation: moverightleg 2s infinite;
+  }
+  @keyframes changemaincolor {
+    0% {
+      background-color: rgb(255, 0, 187);
+    }
+  
+    25% {
+      background-color: rgb(210, 30, 30);
+    }
+  
+    50% {
+        background-color: rgb(114, 0, 95);
+    }
+  
+    75% {
+        background-color: rgb(45, 57, 112);
+    }
+  
+    100% {
+      background-color: rgb(89, 142, 9);
+    }
+}
+  @keyframes changefacecolor {
+    0% {
+      background-color: rgb(225, 255, 0);
+    }
+  
+    25% {
+      background-color: rgb(30, 60, 210);
+    }
+  
+    50% {
+        background-color: rgb(0, 255, 110);
+    }
+  
+    75% {
+        background-color: rgb(255, 0, 0);
+    }
+  
+    100% {
+      background-color: rgb(121, 94, 94);
+    }
+  }
+  @keyframes movelefthand {
+    0% {
+      transform: rotate(0deg);
+      transform-origin: top center;
+    }
+  
+    25% {
+      transform: rotate(-90deg);
+      transform-origin: top center;
+    }
+  
+    50% {
+      transform: rotate(0deg);
+      transform-origin: top center;
+    }
+  
+    75% {
+      transform: rotate(90deg);
+      transform-origin: top center;
+    }
+  
+    100% {
+      transform: rotate(0deg);
+      transform-origin: top center;
+    }
+  }
+  
+  @keyframes moverighthand {
+    0% {
+      transform: rotate(0deg);
+      transform-origin: top center;
+    }
+  
+    25% {
+      transform: rotate(90deg);
+      transform-origin: top center;
+    }
+  
+    50% {
+      transform: rotate(0deg);
+      transform-origin: top center;
+    }
+  
+    75% {
+      transform: rotate(-90deg);
+      transform-origin: top center;
+    }
+  
+    100% {
+      transform: rotate(0deg);
+      transform-origin: top center;
+    }
+  }
+  
+  @keyframes moveleftleg {
+    0% {
+      transform: rotate(0deg);
+    }
+  
+    25% {
+      transform: rotate(40deg);
+    }
+  
+    50% {
+      transform: rotate(0deg);
+    }
+  
+    75% {
+      transform: rotate(-40deg);
+    }
+  
+    100% {
+      transform: rotate(0deg);
+    }
+  }
+  
+  @keyframes moverightleg {
+    0% {
+      transform: rotate(0deg);
+    }
+  
+    25% {
+      transform: rotate(-40deg);
+    }
+  
+    50% {
+      transform: rotate(0deg);
+    }
+  
+    75% {
+      transform: rotate(40deg);
+    }
+  
+    100% {
+      transform: rotate(0deg);
+    }
+  }
+  
+  @keyframes movebody {
+    from {
+      transform: rotate(0deg);
+    }
+  
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
